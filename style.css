@@ -1,0 +1,22 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: black;
+
+}
+
+.shell-matrix{
+    padding: 5rem;
+    background: rgb(20, 20, 20);
+    color: lightgreen;
+    
+    font: 1.3rem Inconsolata, monospace;
+    font-weight: bold;
+
+    height: 80vh;
+  }
