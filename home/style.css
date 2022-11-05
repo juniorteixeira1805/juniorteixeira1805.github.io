@@ -35,13 +35,12 @@ html{
   font-size: var(--text-medium);
 }
 
-
 body {
   padding: 0;
   margin: 0;
 
   background: var(--secondary-color-200);
-  transition: opacity 3s 1s 1s;
+  transition: opacity 2s 1s 1s;
 }
 
 nav {
@@ -49,8 +48,8 @@ nav {
   align-items: center;
   justify-content: center;
 
-  width: 100%;
-  height: 150px;
+  width: 100vw;
+  height: 15vh;
 
 
   background: var(--primary-color-600) ;
@@ -62,28 +61,29 @@ nav {
   margin: 0px 5rem;
 }
 
-.header{
+.terminal{
+  margin: 3rem 0 0 2rem;
+  width: 40rem;
+
+  border-radius: 0.3rem;
+  background-color: rgba(10, 10, 10, 0.8);
+  box-shadow: 0 0.5rem 1rem rgba(10, 10, 10, 1);
+}
+
+.header-terminal{
   border-bottom: solid 1px rgba(0, 0, 0, 0.3);
-  background-color: black;
+  border-radius: 0.3rem 0.3rem 0 0;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   visibility: visible;
   transition: opacity 3s 1s 1s;
-
 }
 
-.aba{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 35px;
-  border-radius: 15px 15px 0 0;
-  background: rgba(50, 50, 50, 0.8);
+.title{
+  margin: 0.4rem auto;
 
-  font-size: medium;
 }
 
 .menu{
@@ -98,27 +98,34 @@ nav {
   background: white;
   width: 10px;
   height: 2px;
+  margin: 2px 4px;
 
   cursor: pointer;
+}
+
+.min:hover{
+  background: #6e8e9b;
 }
 
 .max{
   border: 1px solid white;
   width: 8px;
   height: 8px;
+  margin: 2px 4px;
 
   cursor: pointer;
+}
+.max:hover{
+  background: #6e8e9b;
 }
 
 .close{
   cursor: pointer;
+  padding: 2px 4px;
 }
-
-.terminal{
-  margin: 3rem 0 0 2rem;
-  width: 40rem;
+.close:hover{
+  background: #6e8e9b;
 }
-
 
 .console{
   padding: 1rem 2rem 2rem 2rem;
@@ -126,9 +133,8 @@ nav {
 
   border-radius: 0 0 0 0.5rem;
   overflow-y: auto;
-
-  background-color: rgba(10, 10, 10, 1);
-  box-shadow: 0 1rem 1rem rgba(10, 10, 10, 1);;
+  scroll-behavior: auto;
+  
   cursor: text;
 
   visibility: visible;
@@ -140,12 +146,13 @@ nav {
 }
 
 .console::-webkit-scrollbar-track {
-  background: black;       
+  background-color: rgba(70, 70, 70, 0.8);
 }
 .console::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color-400);
+  background-color: gray;
   border-radius: 20px;
-  border: 3px solid black;
+  border: 3px solid rgba(70, 70, 70, 0.8);
+  ;
 }
 
 .success{
@@ -153,12 +160,12 @@ nav {
 }
 
 .user{
-  color: var(--danger-color);
+  color: var(--info-color);
 }
 
 .text {
   text-align: justify;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 @keyframes name-of-animation {
