@@ -161,18 +161,6 @@ nav {
   line-height: 35px;
 }
 
-@keyframes type {
-  0% {
-    width: 0;
-  }
-
-}
-@keyframes caret { 
-  50% { 
-    box-shadow: .6em 0 0 transparent;
-  }
-}
-
 @keyframes name-of-animation {
   0%    { opacity: 0; }
   50%  { opacity: 1; }
