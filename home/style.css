@@ -27,7 +27,7 @@
 }
 
 html{
-  animation: name-of-animation 10s normal;
+  /*animation: name-of-animation 10s normal;*/
 }
 
 *{
@@ -40,7 +40,6 @@ body {
   margin: 0;
 
   background: var(--secondary-color-200);
-  transition: opacity 2s 1s 1s;
 }
 
 nav {
@@ -68,6 +67,11 @@ nav {
   border-radius: 0.3rem;
   background-color: rgba(10, 10, 10, 0.8);
   box-shadow: 0 0.5rem 1rem rgba(10, 10, 10, 1);
+  position: absolute;
+}
+
+.terminal:active{
+  cursor: grabbing;
 }
 
 .header-terminal{
@@ -134,7 +138,7 @@ nav {
   border-radius: 0 0 0 0.5rem;
   overflow-y: auto;
   scroll-behavior: auto;
-  
+
   cursor: text;
 
   visibility: visible;

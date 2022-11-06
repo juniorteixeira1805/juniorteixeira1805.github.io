@@ -31,8 +31,12 @@ currentText = '';
     setTimeout(write, Math.floor(Math.random()*50));
 }());
 
-/*
-str += '<code>[kali@kali]-[~]-></code> ';
-str += '<code>cat hello-friend.txt</code> <br><br>';
-*/
+
+var element = document.getElementById('terminal');
+
+element.addEventListener('dragend', drag)
+
+function drag(event) {
+    element.style.top = event.pageY + "px"
+}
 
