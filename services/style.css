@@ -3,6 +3,11 @@ body{
     margin: 0 !important;
 }
 
+main{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 .navbar{
     padding: 2rem !important;
     border-bottom: solid 3px gold;
@@ -11,18 +16,6 @@ body{
 
 section{
     margin: 100px
-}
-
-@media(max-width: 600){
-
-    section{
-        margin: 5px;
-    }
-
-    .title{
-        margin: 5px 0;
-        color: goldenrod
-    }
 }
 
 .title{
@@ -56,3 +49,31 @@ section{
     background-color: goldenrod;
 }
 
+@media(max-width: 600px){
+    .groupTable{
+        margin: 20px 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .group{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .finaly{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        margin: 20px 0;
+    }
+    .title{
+        margin: 10px 0;
+    }
+    section{
+        padding: 20px;
+        margin: 0
+    }
+}
