@@ -114,29 +114,29 @@ function adicionarClubesNoGrupo(){
 
     grupoA.map((clube, index) => {
         document.getElementsByClassName('row-group-a')[index].innerHTML = `
-            <td >${index + 1}°</td>
-            <td>${clube.nome}</td>
-            <td>${clube.jogos}</td>
-            <td>${clube.golsSofridos}</td>
-            <td>${clube.golsFeitos}</td>
-            <td>${clube.golsFeitos - clube.golsSofridos}</td>
-            <td>${clube.cartaoAmarelo}</td>
-            <td>${clube.cartaoVermelho}</td>
-            <td>${clube.pontos}</td>
+            <td class="text-center" >${index + 1}°</td>
+            <td class="text-center">${clube.nome}</td>
+            <td class="text-center">${clube.jogos}</td>
+            <td class="text-center">${clube.golsSofridos}</td>
+            <td class="text-center">${clube.golsFeitos}</td>
+            <td class="text-center">${clube.golsFeitos - clube.golsSofridos}</td>
+            <td class="text-center">${clube.cartaoAmarelo}</td>
+            <td class="text-center">${clube.cartaoVermelho}</td>
+            <td class="text-center">${clube.pontos}</td>
         `;
     })
 
     grupoB.map((clube, index) => {
         document.getElementsByClassName('row-group-b')[index].innerHTML = `
-            <td >1°</td>
-            <td>${clube.nome}</td>
-            <td>${clube.jogos}</td>
-            <td>${clube.golsSofridos}</td>
-            <td>${clube.golsFeitos}</td>
-            <td>${clube.golsFeitos - clube.golsSofridos}</td>
-            <td>${clube.cartaoAmarelo}</td>
-            <td>${clube.cartaoVermelho}</td>
-            <td>${clube.pontos}</td>
+            <td class="text-center" >1°</td>
+            <td class="text-center">${clube.nome}</td>
+            <td class="text-center">${clube.jogos}</td>
+            <td class="text-center">${clube.golsSofridos}</td>
+            <td class="text-center">${clube.golsFeitos}</td>
+            <td class="text-center">${clube.golsFeitos - clube.golsSofridos}</td>
+            <td class="text-center">${clube.cartaoAmarelo}</td>
+            <td class="text-center">${clube.cartaoVermelho}</td>
+            <td class="text-center">${clube.pontos}</td>
         `;
     })
 }
@@ -244,14 +244,14 @@ function exibirRodada(value){
         rodada1.map((jogo, index) => {
             rounds.innerHTML += `
             <tr>
-                <td class="round">Jogo ${index + 1}</td>
-                <td class="round">${jogo.clube1}</td>
-                <td class="round">${jogo.golsClube1 ?? '-'}</td>
-                <td class="round"></td>
-                <td class="round">${jogo.golsClube2 ?? '-'}</td>
-                <td class="round">${jogo.clube2}</td>
-                <td class="round">${jogo.hora}</td>
-                <td class="round">${jogo.grupo}</td>
+                <td class="text-center round">Jogo ${index + 1}</td>
+                <td class="text-center round">${jogo.clube1}</td>
+                <td class="text-center round">${jogo.golsClube1 ?? '-'}</td>
+                <td class="text-center round"></td>
+                <td class="text-center round">${jogo.golsClube2 ?? '-'}</td>
+                <td class="text-center round">${jogo.clube2}</td>
+                <td class="text-center round">${jogo.hora}</td>
+                <td class="text-center round">${jogo.grupo}</td>
             </tr>`
         })
     }
@@ -262,14 +262,14 @@ function exibirRodada(value){
         rodada2.map((jogo, index) => {
             rounds.innerHTML += `
             <tr>
-                <td class="round">Jogo ${index + 4}</td>
-                <td class="round">${jogo.clube1}</td>
-                <td class="round">${jogo.golsClube1 ?? '-'}</td>
-                <td class="round"></td>
-                <td class="round">${jogo.golsClube2 ?? '-'}</td>
-                <td class="round">${jogo.clube2}</td>
-                <td class="round">${jogo.hora}</td>
-                <td class="round">${jogo.grupo}</td>
+                <td class="text-center round">Jogo ${index + 4}</td>
+                <td class="text-center round">${jogo.clube1}</td>
+                <td class="text-center round">${jogo.golsClube1 ?? '-'}</td>
+                <td class="text-center round"></td>
+                <td class="text-center round">${jogo.golsClube2 ?? '-'}</td>
+                <td class="text-center round">${jogo.clube2}</td>
+                <td class="text-center round">${jogo.hora}</td>
+                <td class="text-center round">${jogo.grupo}</td>
             </tr>`
         })
     }
@@ -281,14 +281,14 @@ function exibirRodada(value){
         rodada3.map((jogo, index) => {
             rounds.innerHTML += `
             <tr>
-                <td class="round">Jogo ${index + 7}</td>
-                <td class="round">${jogo.clube1}</td>
-                <td class="round">${jogo.golsClube1 ?? '-'}</td>
-                <td class="round"></td>
-                <td class="round">${jogo.golsClube2 ?? '-'}</td>
-                <td class="round">${jogo.clube2}</td>
-                <td class="round">${jogo.hora}</td>
-                <td class="round">Semi-final</td>
+                <td class="text-center round">Jogo ${index + 7}</td>
+                <td class="text-center round">${jogo.clube1}</td>
+                <td class="text-center round">${jogo.golsClube1 ?? '-'}</td>
+                <td class="text-center round"></td>
+                <td class="text-center round">${jogo.golsClube2 ?? '-'}</td>
+                <td class="text-center round">${jogo.clube2}</td>
+                <td class="text-center round">${jogo.hora}</td>
+                <td class="text-center round">Semi-final</td>
 
             </tr>`
         })
@@ -301,14 +301,14 @@ function exibirRodada(value){
         rodada4.map((jogo, index) => {
             rounds.innerHTML += `
             <tr>
-                <td class="round">Jogo ${index + 1}</td>
-                <td class="round">${jogo.clube1}</td>
-                <td class="round">${jogo.golsClube1 ?? '-'}</td>
-                <td class="round"></td>
-                <td class="round">${jogo.golsClube2 ?? '-'}</td>
-                <td class="round">${jogo.clube2}</td>
-                <td class="round">${jogo.hora}</td>
-                <td class="round">${index == 0 ? 'Terceiro lugar' : 'Final'}</td>
+                <td class="text-center round">Jogo ${index + 1}</td>
+                <td class="text-center round">${jogo.clube1}</td>
+                <td class="text-center round">${jogo.golsClube1 ?? '-'}</td>
+                <td class="text-center round"></td>
+                <td class="text-center round">${jogo.golsClube2 ?? '-'}</td>
+                <td class="text-center round">${jogo.clube2}</td>
+                <td class="text-center round">${jogo.hora}</td>
+                <td class="text-center round">${index == 0 ? 'Terceiro lugar' : 'Final'}</td>
 
             </tr>`
         })

@@ -7,18 +7,17 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Campeonato da residencia UFRN</title>
 </head>
-<body>
+<body id="body">
 
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="logo">
-            <a href="#">
+            <a href="#body">
                 <img src="./assets/ufrn.png" alt="logo ufrn" />
             </a>    
         </div>
         <div class="nav-links">
-            <a class="nav-link active" href="#sectionTable">Tabela</a>
-            <a class="nav-link" aria-current="page" href="#sectionRounds">Rodadas</a>
-            <a class="nav-link" href="#sectionStatistics">Estatísticas</a>    
+            <a class="nav-link active" href="#section-table">Tabela</a>
+            <a class="nav-link" aria-current="page" href="#rounds">Rodadas</a>
         </div>
       </nav>
 
@@ -35,15 +34,15 @@
                 <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th >#</th>
-                        <th >Clube</th>
-                        <th >Jogos</th>
-                        <th >GS</th>
-                        <th >GF</th>
-                        <th >SG</th>
-                        <th >CA</th>
-                        <th >CV</th>
-                        <th >Pontos</th>
+                        <th class="text-center">#</th>
+                        <th class="text-center">Clube</th>
+                        <th class="text-center">Jogos</th>
+                        <th class="text-center">GS</th>
+                        <th class="text-center">GF</th>
+                        <th class="text-center">SG</th>
+                        <th class="text-center">CA</th>
+                        <th class="text-center">CV</th>
+                        <th class="text-center">Pontos</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -64,15 +63,15 @@
                 <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th >#</th>
-                        <th >Clube</th>
-                        <th >Jogos</th>
-                        <th >GS</th>
-                        <th >GF</th>
-                        <th >SG</th>
-                        <th >CA</th>
-                        <th >CV</th>
-                        <th >Pontos</th>
+                        <th class="text-center">#</th>
+                        <th class="text-center">Clube</th>
+                        <th class="text-center">Jogos</th>
+                        <th class="text-center">GS</th>
+                        <th class="text-center">GF</th>
+                        <th class="text-center">SG</th>
+                        <th class="text-center">CA</th>
+                        <th class="text-center">CV</th>
+                        <th class="text-center">Pontos</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -87,7 +86,7 @@
         </div>
     </section>
 
-    <section class="rounds bg-light">
+    <section class="rounds bg-light" id="rounds">
         <div class="container options">
             <select onchange="exibirRodada(event.target.value)">
                 <option value="1">Rodada 1</option>
@@ -103,14 +102,14 @@
             <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th ></th>
-                    <th >Clube</th>
-                    <th ></th>
-                    <th >X</th>
-                    <th ></th>
-                    <th >Clube</th>
-                    <th >Horário</th>
-                    <th >Grupo</th>
+                    <th class="text-center"></th>
+                    <th class="text-center">Clube</th>
+                    <th class="text-center"></th>
+                    <th class="text-center">X</th>
+                    <th class="text-center"></th>
+                    <th class="text-center">Clube</th>
+                    <th class="text-center">Horário</th>
+                    <th class="text-center">Grupo</th>
                   </tr>
                 </thead>
                 <tbody id="round-table">
