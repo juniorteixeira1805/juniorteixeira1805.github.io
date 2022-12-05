@@ -1,8 +1,4 @@
-
 const introductionRender = localStorage.getItem("INTRODUCTION@KEY")
-
-console.log(introductionRender)
-
 
 if(!introductionRender){
     var str, i, isHtmlTag, currentText;
@@ -41,5 +37,3 @@ if(!introductionRender){
 }
 
 localStorage.setItem("INTRODUCTION@KEY", "true")
-
-
