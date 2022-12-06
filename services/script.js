@@ -240,7 +240,7 @@ function exibirRodada(value){
 
     if(value == 1){
         rounds.innerHTML = '<tr></tr>';
-        document.getElementById("title-round-table").innerText = "1° RODADA - FASE DE GRUPOS (06/12)"
+        document.getElementById("title-round-table").innerText = "1° RODADA - FASE DE GRUPOS (07/12)"
         rodada1.map((jogo, index) => {
             rounds.innerHTML += `
             <tr>
