@@ -1,5 +1,3 @@
-/* =========================== TABELA ======================*/
-
 const grupoA = [
     {
         nome: 'Campus 2 p²',
@@ -59,6 +57,98 @@ const grupoB = [
         pontos: 0,
     }
 ]
+
+const rodada1 = [
+    {
+        clube1: grupoA[0].nome, //campus 2 piso 2
+        golsClube1: null,
+        clube2: grupoA[1].nome, // campus 1 piso 1
+        golsClube2: null,
+        hora: "22:15",
+        grupo: "A"
+    },
+    {
+        clube1: grupoB[0].nome, // Campus 3 p²
+        golsClube1: null,
+        clube2: grupoB[1].nome, // Campus 1 p²
+        golsClube2: null,
+        hora: "22:45",
+        grupo: "B"
+    },
+    {
+        clube1: grupoA[2].nome, // Campus 3 p¹
+        golsClube1: null,
+        clube2: grupoA[1].nome, // Campus 1 p¹
+        golsClube2: null,
+        hora: "23:15",
+        grupo: "A"
+    }
+]
+
+const rodada2 = [
+    {
+        clube1: grupoB[0].nome,
+        golsClube1: null,
+        clube2: grupoB[2].nome,
+        golsClube2: null,
+        hora: "22:15",
+        grupo: "B"
+    },
+    {
+        clube1: grupoA[0].nome,
+        golsClube1: null,
+        clube2: grupoA[2].nome,
+        golsClube2: null,
+        hora: "22:45",
+        grupo: "A"
+    },
+    {
+        clube1: grupoB[2].nome,
+        golsClube1: null,
+        clube2: grupoB[1].nome,
+        golsClube2: null,
+        hora: "23:15",
+        grupo: "B"
+    }
+]
+
+const rodada3 = [
+    {
+        clube1: "1° Colocado do A",
+        golsClube1: null,
+        clube2: "'2° Colocado do B",
+        golsClube2: null,
+        hora: "22:15",
+        grupo: "A"
+    },
+    {
+        clube1: "1° Colocado do B",
+        golsClube1: null,
+        clube2: "2° Colocado do A",
+        golsClube2: null,
+        hora: "22:45",
+    },
+]
+
+const rodada4 = [
+    {
+        clube1: "Perdedor do jogo 7",
+        golsClube1: null,
+        clube2: "Perdedor do jogo 8",
+        golsClube2: null,
+        hora: "22:15",
+        grupo: "A"
+    },
+    {
+        clube1: "Vencedor jogo 7",
+        golsClube1: null,
+        clube2: "Vencedor jogo 8",
+        golsClube2: null,
+        hora: "22:45",
+        grupo: "B"
+    },
+]
+
 
 function sortGroups(a,b){
     if (a.pontos < b.pontos) {
@@ -140,100 +230,6 @@ function adicionarClubesNoGrupo(){
         `;
     })
 }
-adicionarClubesNoGrupo()
-
-// ================= RODADAS ==========================//
-
-const rodada1 = [
-    {
-        clube1: grupoA[0].nome,
-        golsClube1: null,
-        clube2: grupoA[1].nome,
-        golsClube2: null,
-        hora: "22:15",
-        grupo: "A"
-    },
-    {
-        clube1: grupoB[0].nome,
-        golsClube1: null,
-        clube2: grupoB[1].nome,
-        golsClube2: null,
-        hora: "22:45",
-        grupo: "B"
-    },
-    {
-        clube1: grupoA[2].nome,
-        golsClube1: null,
-        clube2: grupoA[1].nome,
-        golsClube2: null,
-        hora: "23:15",
-        grupo: "A"
-    }
-]
-
-const rodada2 = [
-    {
-        clube1: grupoB[0].nome,
-        golsClube1: null,
-        clube2: grupoB[2].nome,
-        golsClube2: null,
-        hora: "22:15",
-        grupo: "B"
-    },
-    {
-        clube1: grupoA[0].nome,
-        golsClube1: null,
-        clube2: grupoA[2].nome,
-        golsClube2: null,
-        hora: "22:45",
-        grupo: "A"
-    },
-    {
-        clube1: grupoB[2].nome,
-        golsClube1: null,
-        clube2: grupoB[1].nome,
-        golsClube2: null,
-        hora: "23:15",
-        grupo: "B"
-    }
-]
-
-const rodada3 = [
-    {
-        clube1: "1° Colocado do A",
-        golsClube1: null,
-        clube2: "'2° Colocado do B",
-        golsClube2: null,
-        hora: "22:15",
-        grupo: "A"
-    },
-    {
-        clube1: "1° Colocado do B",
-        golsClube1: null,
-        clube2: "2° Colocado do A",
-        golsClube2: null,
-        hora: "22:45",
-    },
-]
-
-const rodada4 = [
-    {
-        clube1: "Perdedor do jogo 7",
-        golsClube1: null,
-        clube2: "Perdedor do jogo 8",
-        golsClube2: null,
-        hora: "22:15",
-        grupo: "A"
-    },
-    {
-        clube1: "Vencedor jogo 7",
-        golsClube1: null,
-        clube2: "Vencedor jogo 8",
-        golsClube2: null,
-        hora: "22:45",
-        grupo: "B"
-    },
-]
 
 function exibirRodada(value){
     var rounds = document.getElementById("round-table")
@@ -316,4 +312,5 @@ function exibirRodada(value){
 }
 
 exibirRodada(1)
+adicionarClubesNoGrupo()
 
