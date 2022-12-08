@@ -15,7 +15,7 @@ const grupoA = [
         golsSofridos: 1,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
-        pontos: 3,
+        pontos: 6,
     },
     {
         nome: 'Campus 3 p¹',
