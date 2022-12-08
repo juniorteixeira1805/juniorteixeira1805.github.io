@@ -13,7 +13,7 @@ const grupoA = [
         jogos: 2,
         golsFeitos: 10,
         golsSofridos: 1,
-        cartaoAmarelo: 0,
+        cartaoAmarelo: 1,
         cartaoVermelho: 0,
         pontos: 6,
     },
@@ -23,7 +23,7 @@ const grupoA = [
         golsFeitos: 1,
         golsSofridos: 3,
         cartaoAmarelo: 0,
-        cartaoVermelho: 0,
+        cartaoVermelho: 2,
         pontos: 0,
     }
 ]
@@ -69,9 +69,9 @@ const rodada1 = [
     },
     {
         clube1: grupoB[0].nome, // Campus 3 p²
-        golsClube1: 9,
+        golsClube1: 0,
         clube2: grupoB[1].nome, // Campus 1 p²
-        golsClube2: 0,
+        golsClube2: 9,
         hora: "22:45",
         grupo: "B"
     },
@@ -218,7 +218,7 @@ function adicionarClubesNoGrupo(){
 
     grupoB.map((clube, index) => {
         document.getElementsByClassName('row-group-b')[index].innerHTML = `
-            <td class="text-center" >1°</td>
+            <td class="text-center" >${index + 1}°</td>
             <td class="text-center">${clube.nome}</td>
             <td class="text-center">${clube.jogos}</td>
             <td class="text-center">${clube.golsSofridos}</td>
