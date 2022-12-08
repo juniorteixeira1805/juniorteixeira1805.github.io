@@ -1,27 +1,27 @@
 const grupoA = [
     {
         nome: 'Campus 2 p²',
-        jogos: 0,
+        jogos: 1,
         golsFeitos: 0,
-        golsSofridos: 0,
-        cartaoAmarelo: 0,
+        golsSofridos: 7,
+        cartaoAmarelo: 1,
         cartaoVermelho: 0,
         pontos: 0
     },
     {
         nome: 'Campus 1 p¹',
-        jogos: 0,
-        golsFeitos: 0,
-        golsSofridos: 0,
+        jogos: 2,
+        golsFeitos: 10,
+        golsSofridos: 1,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
-        pontos: 0,
+        pontos: 3,
     },
     {
         nome: 'Campus 3 p¹',
-        jogos: 0,
-        golsFeitos: 0,
-        golsSofridos: 0,
+        jogos: 1,
+        golsFeitos: 1,
+        golsSofridos: 3,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
         pontos: 0,
@@ -31,21 +31,21 @@ const grupoA = [
 const grupoB = [
     {
         nome: 'Campus 3 p²',
-        jogos: 0,
+        jogos: 1,
         golsFeitos: 0,
-        golsSofridos: 0,
-        cartaoAmarelo: 0,
+        golsSofridos: 9,
+        cartaoAmarelo: 1,
         cartaoVermelho: 0,
         pontos: 0
     },
     {
         nome: 'Campus 1 p²',
-        jogos: 0,
-        golsFeitos: 0,
+        jogos: 1,
+        golsFeitos: 9,
         golsSofridos: 0,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
-        pontos: 0,
+        pontos: 3,
     },
     {
         nome: 'Campus 3 p³',
@@ -61,25 +61,25 @@ const grupoB = [
 const rodada1 = [
     {
         clube1: grupoA[0].nome, //campus 2 piso 2
-        golsClube1: null,
+        golsClube1: 0,
         clube2: grupoA[1].nome, // campus 1 piso 1
-        golsClube2: null,
+        golsClube2: 7,
         hora: "22:15",
         grupo: "A"
     },
     {
         clube1: grupoB[0].nome, // Campus 3 p²
-        golsClube1: null,
+        golsClube1: 9,
         clube2: grupoB[1].nome, // Campus 1 p²
-        golsClube2: null,
+        golsClube2: 0,
         hora: "22:45",
         grupo: "B"
     },
     {
         clube1: grupoA[2].nome, // Campus 3 p¹
-        golsClube1: null,
+        golsClube1: 1,
         clube2: grupoA[1].nome, // Campus 1 p¹
-        golsClube2: null,
+        golsClube2: 3,
         hora: "23:15",
         grupo: "A"
     }
