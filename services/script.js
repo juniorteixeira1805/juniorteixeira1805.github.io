@@ -5,7 +5,7 @@ const grupoA = [
         nome: 'Campus 2 p²',
         jogos: 1,
         golsFeitos: 0,
-        golsSofridos: 2,
+        golsSofridos: 3,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
         pontos: 0
@@ -13,7 +13,7 @@ const grupoA = [
     {
         nome: 'Campus 1 p¹',
         jogos: 1,
-        golsFeitos: 2,
+        golsFeitos: 3,
         golsSofridos: 0,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
@@ -149,7 +149,7 @@ const rodada1 = [
         clube1: grupoA[0].nome,
         golsClube1: 0,
         clube2: grupoA[1].nome,
-        golsClube2: 2,
+        golsClube2: 3,
         hora: "22:15",
         grupo: "A"
     },
