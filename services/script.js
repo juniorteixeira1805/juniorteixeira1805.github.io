@@ -3,21 +3,21 @@
 const grupoA = [
     {
         nome: 'Campus 2 p²',
-        jogos: 0,
+        jogos: 1,
         golsFeitos: 0,
-        golsSofridos: 0,
+        golsSofridos: 1,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
         pontos: 0
     },
     {
         nome: 'Campus 1 p¹',
-        jogos: 0,
-        golsFeitos: 0,
+        jogos: 1,
+        golsFeitos: 1,
         golsSofridos: 0,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
-        pontos: 0,
+        pontos: 3,
     },
     {
         nome: 'Campus 3 p¹',
@@ -147,9 +147,9 @@ adicionarClubesNoGrupo()
 const rodada1 = [
     {
         clube1: grupoA[0].nome,
-        golsClube1: null,
+        golsClube1: 0,
         clube2: grupoA[1].nome,
-        golsClube2: null,
+        golsClube2: 1,
         hora: "22:15",
         grupo: "A"
     },
