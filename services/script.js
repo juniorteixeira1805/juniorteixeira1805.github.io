@@ -272,7 +272,7 @@ function exibirRodada(value){
 
     if(value == 3){
         rounds.innerHTML = '<tr></tr>';
-        document.getElementById("title-round-table").innerText = "3° RODADA - SEMI-FINAIS (08/12)"
+        document.getElementById("title-round-table").innerText = "3° RODADA - SEMI-FINAIS (13/12)"
 
         rodada3.map((jogo, index) => {
             rounds.innerHTML += `
@@ -292,7 +292,7 @@ function exibirRodada(value){
 
     if(value == 4){
         rounds.innerHTML = '<tr></tr>';
-        document.getElementById("title-round-table").innerText = "4° RODADA - FINAIS (08/12)"
+        document.getElementById("title-round-table").innerText = "4° RODADA - FINAIS (15/12)"
 
         rodada4.map((jogo, index) => {
             rounds.innerHTML += `
