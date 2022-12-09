@@ -88,25 +88,25 @@ const rodada1 = [
 const rodada2 = [
     {
         clube1: grupoB[0].nome,
-        golsClube1: null,
+        golsClube1: 2,
         clube2: grupoB[2].nome,
-        golsClube2: null,
+        golsClube2: 2,
         hora: "22:15",
         grupo: "B"
     },
     {
         clube1: grupoA[0].nome,
-        golsClube1: null,
+        golsClube1: 5,
         clube2: grupoA[2].nome,
-        golsClube2: null,
+        golsClube2: 1,
         hora: "22:45",
         grupo: "A"
     },
     {
         clube1: grupoB[2].nome,
-        golsClube1: null,
+        golsClube1: 2,
         clube2: grupoB[1].nome,
-        golsClube2: null,
+        golsClube2: 3,
         hora: "23:15",
         grupo: "B"
     }
@@ -114,17 +114,17 @@ const rodada2 = [
 
 const rodada3 = [
     {
-        clube1: "1° Colocado do A",
+        clube1: "Campus 1 p¹",
         golsClube1: null,
-        clube2: "'2° Colocado do B",
+        clube2: "Campus 3 p³",
         golsClube2: null,
         hora: "22:15",
         grupo: "A"
     },
     {
-        clube1: "1° Colocado do B",
+        clube1: "Campus 1 p²",
         golsClube1: null,
-        clube2: "2° Colocado do A",
+        clube2: "Campus 2 p²",
         golsClube2: null,
         hora: "22:45",
     },
