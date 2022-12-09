@@ -1,12 +1,12 @@
 const grupoA = [
     {
         nome: 'Campus 2 p²',
-        jogos: 1,
-        golsFeitos: 0,
-        golsSofridos: 7,
+        jogos: 2,
+        golsFeitos: 5,
+        golsSofridos: 8,
         cartaoAmarelo: 1,
         cartaoVermelho: 0,
-        pontos: 0
+        pontos: 3
     },
     {
         nome: 'Campus 1 p¹',
@@ -19,9 +19,9 @@ const grupoA = [
     },
     {
         nome: 'Campus 3 p¹',
-        jogos: 1,
-        golsFeitos: 1,
-        golsSofridos: 3,
+        jogos: 2,
+        golsFeitos: 2,
+        golsSofridos: 8,
         cartaoAmarelo: 0,
         cartaoVermelho: 2,
         pontos: 0,
@@ -31,30 +31,30 @@ const grupoA = [
 const grupoB = [
     {
         nome: 'Campus 3 p²',
-        jogos: 1,
-        golsFeitos: 0,
-        golsSofridos: 9,
-        cartaoAmarelo: 1,
+        jogos: 2,
+        golsFeitos: 2,
+        golsSofridos: 11,
+        cartaoAmarelo: 2,
         cartaoVermelho: 0,
-        pontos: 0
+        pontos: 1
     },
     {
         nome: 'Campus 1 p²',
-        jogos: 1,
-        golsFeitos: 9,
-        golsSofridos: 0,
+        jogos: 2,
+        golsFeitos: 12,
+        golsSofridos: 2,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
-        pontos: 3,
+        pontos: 6,
     },
     {
         nome: 'Campus 3 p³',
-        jogos: 0,
-        golsFeitos: 0,
-        golsSofridos: 0,
+        jogos: 2,
+        golsFeitos: 4,
+        golsSofridos: 5,
         cartaoAmarelo: 0,
         cartaoVermelho: 0,
-        pontos: 0,
+        pontos: 1,
     }
 ]
 
