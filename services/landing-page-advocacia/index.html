@@ -7,6 +7,7 @@
   <title>Benavides e Franco</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" href="/assets/logo.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -24,11 +25,19 @@
     </nav>
 
     <main>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
         <section class="banner">
             <div class="card">
                 <span class="capition">BENAVIDES & FRANCO</span>
-                <span class="title">EXCELÊNCIA </span>
-                <span class="subtitle">EM DIREITO</span>
+                <h1 class="title">EXCELÊNCIA </h1>
+                <h2 class="subtitle">EM DIREITO</h2>
                 <p class="paragraphy">
                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
                     The point of using Lorem Ipsum is that it has a more-or-less normal distributio
@@ -37,7 +46,7 @@
             <div class="about" >
                 <div class="text" id="about" >
                     <span class="separator" ></span>
-                    <span class="title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">QUEM SOMOS</span>
+                    <h3 class="title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">QUEM SOMOS</h3>
                     <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
                         <p class="paragraphy">
                             Nascemos de um grande, saudável e ambicioso sonho: ser o maior escritório
@@ -68,11 +77,11 @@
 
         <section class="management">
             <div class="area" id="area" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
-                <span class="title">ÁREAS DE ATUAÇÃO</span>
+                <h3 class="title">ÁREAS DE ATUAÇÃO</h3>
                 <div class="separator">
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
-                <span class="subtitle">Atuação 360° full service</span>
+                <p class="subtitle">Atuação 360° full service</p>
                 <p class="subtitle">
                     Atendemos toda e qualquer demanda de natureza jurídica, nos destacando
                     pela maneira objetiva, correta, moderna e eficaz que adotamos para
@@ -83,27 +92,27 @@
                 <div class="card">
                     <div class="header">
                         <i class="icon fa-solid fa-bullseye fa-2x"></i>
-                        <span class="title">
+                        <h4 class="title">
                             Missão
-                        </span>
+                        </h4>
                     </div>
-                    <span class="text">
+                    <p class="text">
                         Entender o negócio e os objetivos de nossos clientes para prestar
                         serviços jurídicos com excelência, completos, consistentes, customizados,
                         ágeis e que contribuam para que os resultados almejados sejam superados.
-                    </span>
+                    </p>
                 </div>
                 <div class="card">
                     <div class="header">
                         <i class="icon fa-regular fa-eye fa-2x"></i>
-                        <span class="title">Visão</span>
+                        <h4 class="title">Visão</h4>
                     </div>
-                    <span class="text">Ser reconhecido pelo mercado como referência na prestação de serviços jurídicos especializados</span>
+                    <p class="text">Ser reconhecido pelo mercado como referência na prestação de serviços jurídicos especializados</p>
                 </div>
                 <div class="card">
                     <div class="header">
                         <i class="icon fa-solid fa-users-viewfinder fa-2x"></i>
-                        <span class="title">Valores</span>
+                        <h4 class="title">Valores</h4>
                     </div>
                     <ul class="list">
                         <li class="item">
@@ -134,17 +143,17 @@
 
         <section class="informations">
                 <div class="header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
-                    <span class="title" id="contact">Filiais</span>
+                    <h3 class="title" id="contact">FILIAIS</h3>
                     <br/>
-                    <span class="text">
+                    <p class="text">
                         Fisicamente contamos com duas sedes próprias no estado do Rio Grande no
                         Norte e temos forte atuação digital no âmbito nacional e internacional.
                         Nosso objetivo é expandir e consolidar cada vez mais relações.
-                    </span>
+                    </p>
                 </div>
                 <div class="address" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
                     <div class="infos">
-                        <span class="title">Sede Natal/RN</span>
+                        <h3 class="title">Sede Natal/RN</h3>
                         <span class="subtitle">
                             <i class="icon fa-solid fa-map-location-dot"></i>
                             Espaço 1584 - Rua Raimundo Chaves, 1584 - Sala 06 - Candelária, Natal/RN, CEP: 59064-390.
@@ -157,7 +166,7 @@
                 </div>
                 <div class="address" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
                     <div class="infos">
-                        <span class="title">Nova Cruz/RN</span>
+                        <h3 class="title">Nova Cruz/RN</h3>
                         <span class="subtitle" >
                             <i class="icon fa-solid fa-map-location-dot"></i>
                             Rua Seis de Julho, 238, São Sebastião, Nova Cruz/RN, CEP: 59215-000.
@@ -181,12 +190,23 @@
                 </div>
         </section>
 
+        <div id="cookie-notification" class="CookieMessage" style="display: none;">
+            <div class="CookieMessage-content"> 
+              <p>Este site utiliza cookies de navegação para a melhor experiência do usuário.</p>
+              <p><a id="cookie-notification-close" class="CookieMessage-button" href="#">Aceitar</a> </p>          
+            </div>
+        </div>
+
         <footer><span>Todos os direitos reservados - </span><a href="https://www.linkedin.com/in/gilvan-carlos/" target="_blank" class="link">Junior Teixeira</a></footer>
 
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+</script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/4c81be74b6.js" crossorigin="anonymous"></script>

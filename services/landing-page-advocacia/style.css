@@ -1,13 +1,80 @@
 
-html body{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
 }
 
 body{
     background: url("./assets/advocacia.jpg") top center no-repeat, -webkit-linear-gradient(top, rgb(0, 0, 0),rgb(2, 2, 2), rgb(7, 7, 7), rgb(7, 7, 7), rgb(14, 14, 14));
     background-size: cover;
     background-attachment: fixed;
+}
+
+
+h1{
+    font-size: 75px;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 100;
+
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+span{
+    font-size: 16px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+a{
+    font-size: 18px;
+}
+
+@media (max-width: 600px)
+{
+    h1{
+        font-size: 30px !important;
+    }
+
+    h2{
+        font-size: 25px !important;
+    }
+
+    h3{
+        font-size: 20px !important;
+    }
+
+    h4{
+        font-size: 20px !important;
+    }
+
+    span{
+        font-size: 10px !important;
+    }
+
+    p{
+        font-size: 12px !important;
+        line-height: 18px;
+    }
+
+    a{
+        font-size: 11px;
+    }
 }
 
 /*================== nav =======================*/
@@ -35,7 +102,6 @@ body{
 .nav .items .item{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
     font-weight: 500;
     transition: 0.5s;
 }
@@ -43,6 +109,23 @@ body{
 .nav .items .item:hover{
     color: #a97f2e;
     text-shadow: 1px 1px 1px black;
+}
+
+@media (max-width: 600px)
+{
+    .nav{
+        padding: 10px 0;
+    }
+    .nav .logo {
+        height: 20px;
+    }
+    .nav .items {
+        gap: 20px;
+    }
+    .nav .items .item{
+
+        font-weight: 300;
+    }
 }
 
 /*================== banner =======================*/
@@ -69,7 +152,6 @@ body{
 
 .banner .card .capition{
     color: #fff;
-    font-size: 20px;
     text-shadow: 2px 2px 2px black;
 
     position: relative;
@@ -77,30 +159,26 @@ body{
 
     background-color: #a97f2e;
     box-shadow: 10px 10px 15px black;
-    padding: 10px;
-    
+    padding: 10px; 
 }
 
 .banner .card .title{
     margin: 10px 0 0 0;
     color: #a97f2e;
-    font-size: 75px;
     text-shadow: 2px 2px 2px black;
 }
 
 .banner .card .subtitle{
     color: #fff;
-    font-size: 50px;
+
     text-shadow: 2px 2px 2px black;
     margin: 0 0 20px 0;
 }
 
 .banner .card .paragraphy{
     color: #fff;
-    font-size: 18px;
     text-shadow: 2px 2px 2px black;
     text-align: justify;
-    line-height: 30px;
 }
 
 .banner .about{
@@ -114,7 +192,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .banner .about .text .separator{
@@ -127,16 +204,42 @@ body{
 
 .banner .about .text .title{
     color: #fff;
-    font-size: 40px;
     text-shadow: 3px 3px 2px black;
 }
 
 .banner .about .text .paragraphy{
     color: #fff;
-    font-size: 22px;
     text-align: justify;
-    line-height: 30px;
     text-shadow: 3px 3px 2px black;
+}
+
+@media (max-width: 600px)
+{
+    .banner{
+        padding: 100px 0 150px 0;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .card {    
+        width: 300px;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .banner .card .capition{
+        padding: 10px; 
+        position: relative;
+        top: -35px;
+    }
+
+    .banner .about{
+        padding: 25px 20px 0 20px;
+    }
 }
 /*================== managenment =======================*/
 
@@ -169,9 +272,7 @@ body{
 }
 
 .management .area .title{
-    font-size: 20px;
-    color: goldenrod;
-    text-shadow: 1px 1px 1px black;
+    color: #a97f2e;
 }
 
 .management .area .separator{
@@ -186,9 +287,7 @@ body{
 }
 
 .management .area .subtitle{
-    font-size: 20px;
     text-align: justify;
-    line-height: 30px
 }
 
 .management .area .separator .fa-chevron-down{
@@ -238,20 +337,46 @@ body{
 
 
 .management .mission-end-values .card .header .title{
-    font-size: 22px;
-    color: goldenrod;
+    color: #a97f2e;
     margin: 10px 0;
 }
 
 .management .mission-end-values .card .text{
-    font-size: 20px;
     text-align: justify;
-    line-height: 30px;
     margin: auto;
 }
 
 ul{
     align-self: flex-start;
+}
+
+@media (max-width: 600px)
+{
+
+    .management{
+        padding-bottom: 25px;
+    }
+
+    .management .area{
+        max-width: 300px;
+        padding: 25px;
+    }
+
+    .management .area .separator{
+        margin: 20px 0;
+        width: 200px;
+    }
+
+    .management .mission-end-values{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .management .mission-end-values .card{   
+        padding: 20px 30px;
+        margin: 10px 0;
+        width: 200px;
+    }
 }
 
 /*================== informations =======================*/
@@ -264,13 +389,7 @@ ul{
     flex-direction: column;
 }
 
-.informations .header{
-    padding-bottom: 100px;
-}
-
-
 .informations .header .title{
-    font-size: 60px;
     text-shadow: 1px 1px 1px black;
     color: #a97f2e;
 }
@@ -278,7 +397,6 @@ ul{
 .informations .header .text{
     text-align: justify;
     color: #fff;
-    font-size: 20px;
     text-shadow: 1px 1px 1px black;
 }
 
@@ -305,12 +423,10 @@ ul{
 .informations .address .infos .title{
     text-shadow: 1px 1px 1px black;
     color: #a97f2e;
-    font-size: 30px;
 }
 
 .informations .address .infos .subtitle{
     color: #fff;
-    font-size: 20px;
     text-shadow: 1px 1px 1px black;
     text-decoration: none;
 }
@@ -336,6 +452,50 @@ ul{
     text-decoration: none;
     color: #a97f2e;
     cursor: pointer;
+}
+
+@media (max-width: 600px)
+{
+    iframe{
+        width: 300px;
+    }
+
+    .informations{
+        padding: 50px 25px;
+    }
+
+    .informations .address{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px 0;
+    }
+    
+    .informations .address .infos{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        border-right: none;
+        margin: auto;
+        padding: 10px 40px;
+    }
+
+    .informations .address .infos .title{
+        margin: 10px 0;
+    }
+    
+    .informations .address .infos .subtitle{
+        margin: 5px 0;
+    }
+    
+    .informations .address .infos .subtitle .icon{
+        margin-left: 0;
+        color: #a97f2e;
+    }
 }
 
 /*================== Divider =======================*/
@@ -369,6 +529,41 @@ ul{
     cursor: pointer;
  }
 
+  .CookieMessage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #121212;
+    z-index: 999;
+    display: none;
+  }
+  
+  .CookieMessage-content {
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+  }
+
+  .CookieMessage-content a{
+    color: #fff;
+  }
+
+  .CookieMessage-content p{
+    margin: 0 0 20px 0;
+  }
+  
+  .CookieMessage-button {
+    background: #a97f2e;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+
+  
  @keyframes slidein {
     from{
         opacity: 0;
