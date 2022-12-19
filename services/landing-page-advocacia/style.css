@@ -1,0 +1,381 @@
+
+html body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url("./assets/advocacia.jpg") top center no-repeat, -webkit-linear-gradient(top, rgb(0, 0, 0),rgb(2, 2, 2), rgb(7, 7, 7), rgb(7, 7, 7), rgb(14, 14, 14));
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*================== nav =======================*/
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: -webkit-linear-gradient(top, #4a453b, black);
+    padding: 20px 0;
+    box-shadow: 2px 2px 10px black;
+}
+
+.nav .logo {
+    height: 40px;
+}
+
+.nav .items {
+    gap: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav .items .item{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.nav .items .item:hover{
+    color: #a97f2e;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*================== banner =======================*/
+
+.banner{
+    padding: 100px 50px 400px 100px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.banner .card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    border: solid #f9fafa 2px;
+    box-shadow: 2px 2px 2px black;
+
+    width: 500px;
+    padding: 30px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.banner .card .capition{
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+
+    position: relative;
+    top: -50px;
+
+    background-color: #a97f2e;
+    box-shadow: 10px 10px 15px black;
+    padding: 10px;
+    
+}
+
+.banner .card .title{
+    margin: 10px 0 0 0;
+    color: #a97f2e;
+    font-size: 75px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.banner .card .subtitle{
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black;
+    margin: 0 0 20px 0;
+}
+
+.banner .card .paragraphy{
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.banner .about{
+    display: flex;
+    padding: 250px 200px 0 200px;
+    margin: auto;
+}
+
+.banner .about .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner .about .text .separator{
+    margin: 30px 0;
+    width: 150px;
+    height: 3px;
+
+    background-color: #a97f2e;
+}
+
+.banner .about .text .title{
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 3px 3px 2px black;
+}
+
+.banner .about .text .paragraphy{
+    color: #fff;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 30px;
+    text-shadow: 3px 3px 2px black;
+}
+/*================== managenment =======================*/
+
+.management{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    padding-bottom: 250px;
+}
+
+.management .area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 600px;
+    padding: 50px;
+
+    position: relative;
+    top: -100px;
+
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(78, 78, 78);
+    border: solid 3px goldenrod;
+}
+
+.management .area .title{
+    font-size: 20px;
+    color: goldenrod;
+    text-shadow: 1px 1px 1px black;
+}
+
+.management .area .separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 300px;
+    height: 1px;
+
+    background-color: #a97f2e;
+}
+
+.management .area .subtitle{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px
+}
+
+.management .area .separator .fa-chevron-down{
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid 1px #a97f2e;
+    color: #a97f2e;
+}
+
+.management .mission-end-values{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 100%;
+}
+
+.management .mission-end-values .card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    width: 250px;
+
+    border: solid 3px goldenrod;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(104, 104, 104);
+    padding: 40px 60px;
+}
+
+.management .mission-end-values .card .header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.management .mission-end-values .card .header .icon{
+    width: 75px;
+    color: #a97f2e !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.management .mission-end-values .card .header .title{
+    font-size: 22px;
+    color: goldenrod;
+    margin: 10px 0;
+}
+
+.management .mission-end-values .card .text{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    margin: auto;
+}
+
+ul{
+    align-self: flex-start;
+}
+
+/*================== informations =======================*/
+
+.informations{
+    background: -webkit-linear-gradient(top, #4a453b, rgb(29, 29, 29));
+    padding: 50px 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.informations .header{
+    padding-bottom: 100px;
+}
+
+
+.informations .header .title{
+    font-size: 60px;
+    text-shadow: 1px 1px 1px black;
+    color: #a97f2e;
+}
+
+.informations .header .text{
+    text-align: justify;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.informations .address{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    padding: 50px 0;
+}
+
+.informations .address .infos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    border-right: 5px solid goldenrod;
+    margin-right: 50px;
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+.informations .address .infos .title{
+    text-shadow: 1px 1px 1px black;
+    color: #a97f2e;
+    font-size: 30px;
+}
+
+.informations .address .infos .subtitle{
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+}
+
+.informations .address .infos .subtitle .icon{
+    margin: 0 10px;
+    color: #a97f2e;
+}
+
+.informations .contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations .contacts .link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+
+    text-decoration: none;
+    color: #a97f2e;
+    cursor: pointer;
+}
+
+/*================== Divider =======================*/
+
+.divider{
+    height: 3px;
+    width: 900px;
+
+    background-color: #a97f2e;
+    margin: 130px auto;
+}
+
+
+/*================== Footer =======================*/
+ footer{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+ }
+
+ footer .link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 10px;
+
+    cursor: pointer;
+ }
+
+ @keyframes slidein {
+    from{
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+  }
