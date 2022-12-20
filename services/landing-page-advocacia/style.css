@@ -5,9 +5,22 @@
 }
 
 body{
-    background: url("./assets/advocacia.jpg") top center no-repeat, -webkit-linear-gradient(top, rgb(0, 0, 0),rgb(2, 2, 2), rgb(7, 7, 7), rgb(7, 7, 7), rgb(14, 14, 14));
     background-size: cover;
     background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #615743;
+    border: solid 1px #a97f2e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #a97f2e;
+    border-radius: 20px;
 }
 
 
@@ -29,10 +42,6 @@ h3{
 h4{
     font-size: 24px;
     font-weight: 100;
-}
-
-span{
-    font-size: 16px;
 }
 
 p{
@@ -61,10 +70,6 @@ a{
 
     h4{
         font-size: 20px !important;
-    }
-
-    span{
-        font-size: 10px !important;
     }
 
     p{
@@ -129,10 +134,21 @@ a{
 }
 
 /*================== banner =======================*/
-
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
 .banner{
     padding: 100px 50px 400px 100px;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
 .banner .card {
@@ -379,6 +395,97 @@ ul{
     }
 }
 
+/*================== Team =======================*/
+
+.team{
+    background-color: #615743;
+    padding: 150px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team .container{
+    display: flex;
+    justify-content: center;
+}
+
+.team .description {
+    width: 50%;
+    margin: 0 25px;
+}
+
+.team .description .title{
+    color: #a97f2e;
+    text-shadow: 1px 1px 1px black;
+}
+
+.team .description .paragraphy{
+    text-align: justify;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+}
+
+.team .overflow{
+    overflow-y: scroll;
+    max-height: 340px;
+}
+
+.overflow::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.overflow::-webkit-scrollbar-track {
+    background: transparent;
+    border: solid 1px #a97f2e;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+    background-color: #a97f2e;
+    border-radius: 20px;
+}
+
+.team .content{
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.team .content .text{
+    width: 250px;
+}
+
+.team .content .text .title{
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    padding: 10px 0;
+}
+
+.team .content .text .subtitle{
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+}
+
+.team .message{
+    align-self: flex-start;
+
+    width: 700px;
+    border-left: solid 5px #a97f2e;
+
+    padding: 20px;
+    margin: 50px 170px;
+}
+
+.team .message .text{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+}
+
+
 /*================== informations =======================*/
 
 .informations{
@@ -498,6 +605,7 @@ ul{
     }
 }
 
+
 /*================== Divider =======================*/
 
 .divider{
@@ -528,40 +636,6 @@ ul{
 
     cursor: pointer;
  }
-
-  .CookieMessage {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #121212;
-    z-index: 999;
-    display: none;
-  }
-  
-  .CookieMessage-content {
-    color: white;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 20px 0 20px;
-  }
-
-  .CookieMessage-content a{
-    color: #fff;
-  }
-
-  .CookieMessage-content p{
-    margin: 0 0 20px 0;
-  }
-  
-  .CookieMessage-button {
-    background: #a97f2e;
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-  }
 
   
  @keyframes slidein {
